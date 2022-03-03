@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/arrowLogin_id"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="start"
+        android:src="@drawable/ic_action_name"
+        android:layout_margin="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textAlignment="center"
+            android:textSize="35dp"
+            android:id="@+id/logtext"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/smalltex"
+            android:orientation="vertical"
+            android:id="@+id/emaillon"
+            android:layout_marginTop="30dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:gravity="start"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:id = "@+id/layoutEmailLogin"
+                android:layout_marginTop = "8dp"
+                android:layout_marginStart = "20dp"
+                app:boxBackgroundColor="@color/white"
+                android:layout_marginEnd = "20dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:id = "@+id/emailLogin_id"
+                    android:backgroundTint="@color/white"
+                    android:textStyle="italic"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emaillin"
+            android:orientation="vertical"
+            android:id="@+id/passlin_log"
+            android:layout_marginTop="30dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:gravity="start"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:id = "@+id/layoutPasswordlog"
+                android:layout_marginTop = "8dp"
+                app:boxBackgroundColor="@color/white"
+                app:passwordToggleEnabled="true"
+                android:layout_marginStart = "20dp"
+                android:layout_marginEnd = "20dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:id = "@+id/passwordlogin_id"
+                    android:backgroundTint="@color/white"
+                    android:textStyle="italic"
+                    android:inputType = "textPassword"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pracloginB_id"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/button_card"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text="Login"
+            android:layout_below="@+id/passlin"
+            android:textSize="25dp"
+            android:textAllCaps="false"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot password?"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:id="@+id/forget_password_id"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

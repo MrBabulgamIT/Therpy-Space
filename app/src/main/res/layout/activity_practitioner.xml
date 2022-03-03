@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Practitioner_Activity">
+
+    <ImageView
+        android:id="@+id/arrowPractitioner_id"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_action_name"
+        android:layout_margin="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to\ntherapy.space"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/textPra"
+        android:layout_marginBottom="20dp"
+
+        />
+
+    <Button
+        android:id="@+id/signup_prac_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textPra"
+       android:layout_margin="10dp"
+        android:background="@drawable/button_card"
+        android:padding="5dp"
+        android:text="Sign up"
+        android:textAllCaps="false"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/login_prac_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signup_prac_id"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:text="Existing user? Login"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="normal" />
+
+</RelativeLayout>

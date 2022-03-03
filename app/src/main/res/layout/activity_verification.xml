@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    tools:context=".VerificationActivity">
+
+    <ImageView
+        android:id="@+id/arrowVerfi_id"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_action_name"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verify your email"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:id="@+id/text1ver"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We have sent you an email to confirm"
+            android:gravity="center"
+            android:layout_below="@+id/text1ver"
+            android:textSize="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            />
+
+        <Button
+            android:id="@+id/verButton_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:padding="10dp"
+            android:text="Open App"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textDontEmailver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textSentAgainver"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Don't receive and email?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="17dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sent again"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:layout_below="@id/textSentAgainver"
+        android:id="@+id/textSentAgainver"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".SignupEmailActivity">
+
+    <ImageView
+        android:id="@+id/arrowsignupEmail_id"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="start"
+        android:src="@drawable/ic_action_name"
+        android:layout_margin="20dp"
+        />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Let's get started!"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:id="@+id/larText"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/larText"
+        android:text="Enter your email, you'll need to verify this later"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:id="@+id/smalltex"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:textStyle="normal"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/smalltex"
+        android:orientation="vertical"
+        android:id="@+id/emaillin"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:gravity="start"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:id = "@+id/layoutEmail"
+            android:layout_marginTop = "8dp"
+            android:layout_marginStart = "20dp"
+            app:boxBackgroundColor="@color/white"
+            android:layout_marginEnd = "20dp"
+          >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:id = "@+id/emailsignup_id"
+                android:backgroundTint="@color/white"
+                android:textStyle="italic"
+               />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emaillin"
+        android:orientation="vertical"
+        android:id="@+id/passlin"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:gravity="start"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:id = "@+id/layoutPassword"
+            android:layout_marginTop = "8dp"
+            app:boxBackgroundColor="@color/white"
+            app:passwordToggleEnabled="true"
+            android:layout_marginStart = "20dp"
+            android:layout_marginEnd = "20dp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:id = "@+id/passwordsignup_id"
+                android:backgroundTint="@color/white"
+                android:textStyle="italic"
+                android:inputType = "textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pracEmailnextB_id"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/button_card"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:text="Next"
+        android:layout_below="@+id/passlin"
+        android:textSize="25dp"
+        android:textAllCaps="false"
+        />
+
+
+</LinearLayout>
+
+</LinearLayout>
