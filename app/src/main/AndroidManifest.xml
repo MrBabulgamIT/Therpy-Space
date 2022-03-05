@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TherpySpace">
         <activity
+            android:name=".MainScreenOnActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OnBoardingScreen"
+            android:exported="false" />
+        <activity
             android:name=".ForgetActivtiy"
             android:exported="false" />
         <activity

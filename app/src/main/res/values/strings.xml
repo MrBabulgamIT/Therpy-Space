@@ -11,4 +11,18 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+
+
+
+    <string name="header_1">"Welcome to therapy.space"</string>
+    <string name="header_2">"Schedule appointments"</string>
+    <string name="header_3">"Talk to your clients"</string>
+    <string name="header_4">"Take notes and more"</string>
+
+
+    <string name="description_1">"An easy way to run your practice"</string>
+    <string name="description_2">"Schedule appointments by type, location, date and time"</string>
+    <string name="description_3">"Conduct client sessions face to face or by video call, voice call or
+        instant messaging"</string>
+    <string name="description_4">"Share information with client, video link to websites, articles or note"</string>
 </resources>
